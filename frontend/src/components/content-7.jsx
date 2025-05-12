@@ -38,13 +38,13 @@ export default function ContentSection() {
                         <div
                             className="bg-linear-to-b aspect-67/34 relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
                             <img
-                                src="/src/assets/exercice.webp"
+                                src="/assets/exercice.webp"
                                 className="hidden rounded-[15px] dark:block"
                                 alt="Pact dashboard dark"
                                 width={1206}
                                 height={612} />
                             <img
-                                src="/src/assets/exercice.webp"
+                                src="/assets/exercice.webp"
                                 className="rounded-[15px] shadow dark:hidden"
                                 alt="Pact dashboard light"
                                 width={1206}
