@@ -1,0 +1,89 @@
+/* Custom Heatmap Styling */
+.react-calendar-heatmap text {
+  font-size: 10px;
+  fill: #a1a1aa;
+}
+
+.react-calendar-heatmap .color-empty {
+  fill: #27272a;
+}
+
+.react-calendar-heatmap .color-scale-1 {
+  fill: #22c55e;
+}
+
+/* Card hover effects */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* Custom scrollbar for modern browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #18181b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #52525b;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth tab transitions */
+.tab-content {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.tab-content[hidden] {
+  opacity: 0;
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Empty state icon pulse */
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 0.6;
+    transform: scale(0.98);
+  }
+}
+
+.empty-state-icon {
+  animation: pulse 2s ease-in-out infinite;
+}

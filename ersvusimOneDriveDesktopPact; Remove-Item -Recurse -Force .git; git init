@@ -1,0 +1,135 @@
+[33mcommit 4e32d446c3dbf7d51d1f047a9f7832d0b315a01b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: nostalgic-code <tcityhorizon88@gmail.com>
+Date:   Mon May 12 14:34:35 2025 +0200
+
+    Clean up firebase.json configuration
+
+[1mdiff --git a/firebase.json b/firebase.json[m
+[1mindex 1593891..a2732d2 100644[m
+[1m--- a/firebase.json[m
+[1m+++ b/firebase.json[m
+[36m@@ -13,12 +13,6 @@[m
+       }[m
+     ][m
+   }[m
+[31m-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCkizA5Ek5sGK+L\nLlT6DDve6uqWenHvH/BftU1GxZMKTLkkMWBGF5iUDY7KMlGy3FjKafl2rEXy31yo\nkQ9N4TdLpkXpC5xBp/SplTn0yv2QfEM+M7nDApkleTD+8OwNjeRflKebud1l2Fr7\nJwF+7DsUJXs0zkBY7sq4dmIvQiGaqGmvrACFHc8L7qNZjRGAyaZpmCJlwu+oaMt5\n6laDkj6b0jy/P6At1vxnhv0lU1oyyNBU+xKjnx8XPAAiL8j1D1R/RlogG4t33kPt\nWyOstnOG3tIWLNLiwUjYgZfYzit4K3vXrvolNOln88KzkZAaV6k7Bbrt8BV0ofYl\n8BTuWYPXAgMBAAECggEADSk88DOwpiDLWbyY+28jEs+DeAnPNys81MrxpWmEO1yr\nqmNwqeqVP7Jd63pe4omRaI9VbtKUvbpz9N+1c6tB+wEPsnZFR1Mh1Lak7hmWcood\n7snAYALDMSYibyHiH6tryuFfDqutM8o8bL5P9lD64L+mvTCKIRLokByX+eO2QGJ7\nSmxcP4EHqyXDuOivN5XB0JdNe8E070Kvx3ZIFU60WQC8dHE3HoDnNFbY3+yUqnjl\nVAYHalxztK1sksIa7Gx5uVyWvdbULoHEsOZCVfwi0+2DPl9OxK/b5ZnSfbpCbRl5\ncT57t/RFPN/Aw4T5wRg3Q/y5x8e+ETN27oAOSb7TgQKBgQDRwf8fTVqRFbz0FpLz\nSg+qP/QPPmukAMuI85aCt9vqXUr7crnIxVSiIumLne4Smbrbjrw2mm+qTqQaTSXQ\n3qkmEHNu1sFJgjGeo3nfWq4itsHtqjkaW2dTuTNZQ5EIWQcMw0yiw9hOD0ta5MG2\n87ei6YpWBLy/S4tWnWnRrklB9wKBgQDI0XcHgxqBDdvJsrHViDxPQ9w7otz5yEFl\nlPmym2xoYQ0w1RXVE+xwegoYBeiF3JFV6e1tjI/CFcwXcOQvcSqYBmWFS565pB7E\nN9ydrdJcVc9hcsMfLtRQFPdPspoEMNNv02966WuXFys09Li8PIFWf2N5ycXzXgzA\nc2ECy8dVIQKBgB4BcVxp9V2xzWDhZc4Vtx30nhYcKMvCLVt+9PXoFTZ2eAZ2R+tX\nhx7WfbAyPF8+zIMh7PympPio3ULB7HnvkCTYz5p4cBfy3uRBoGp6D1T57c3wvtBt\naN+KK7VGPBYEnkSOH4VdHLE18OKkvK1OOeO9IsPhU5rN1LXkOMH8+4/LAoGAZ7IJ\nxZ5EJFm0oV0diQaVJdUDtuOtOWnXow2fNkQdYXSj7BBL+sAT+ix6Y9dBL0Yq4fMu\nP8AyR2UcAwqvOXQ1K1U6PO9EYdXGcUnrKJymIDnLISWybbqvtT5uSgAOmZVgyMCk\nMxKvFNDI5cpsTf7sRm73Pd8b0URCT2oEsP3qyyECgYEAiyVXMgNHArNui9yM/p1Q\nK++z7WjBQSF3PjbUXPeSmhi58vaBBWBQ5khSG1w8mVVZ5j6eItY2DX7dEKubps+f\nKEIcGePqFgf6q4vC9nscp45kE1a1nBDaHl91h6HcNSGc4PQX0xH0U/dLwFi54KuU\nS6XueFDg1YzOFLhL/1HM/sQ=\n-----END PRIVATE KEY-----\n",[m
+[31m-  "client_email": "firebase-adminsdk-fbsvc@zezwe-crm.iam.gserviceaccount.com",[m
+[31m-  "client_id": "107189320998717791057",[m
+[31m-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",[m
+[31m-  "token_uri": "https://oauth2.googleapis.com/token",[m
+[31m-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",[m
+   "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40zezwe-crm.iam.gserviceaccount.com",[m
+   "universe_domain": "googleapis.com"[m
+ }[m
+
+[33mcommit ec39c252536bd3537f7fe1dd2aa4a79b9a5137ec[m
+Author: nostalgic-code <tcityhorizon88@gmail.com>
+Date:   Mon May 12 14:31:51 2025 +0200
+
+    Update Firebase hosting configuration
+
+[1mdiff --git a/firebase.json b/firebase.json[m
+[1mindex 00b9135..1593891 100644[m
+[1m--- a/firebase.json[m
+[1m+++ b/firebase.json[m
+[36m@@ -1,7 +1,18 @@[m
+ {[m
+[31m-  "type": "service_account",[m
+[31m-  "project_id": "zezwe-crm",[m
+[31m-  "private_key_id": "41293586f281be540df00fcb464b7bad62bb8a41",[m
+[32m+[m[32m  "hosting": {[m
+[32m+[m[32m    "public": "frontend/dist",[m
+[32m+[m[32m    "ignore": [[m
+[32m+[m[32m      "firebase.json",[m
+[32m+[m[32m      "**/.*",[m
+[32m+[m[32m      "**/node_modules/**"[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "rewrites": [[m
+[32m+[m[32m      {[m
+[32m+[m[32m        "source": "**",[m
+[32m+[m[32m        "destination": "/index.html"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    ][m
+[32m+[m[32m  }[m
+   "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCkizA5Ek5sGK+L\nLlT6DDve6uqWenHvH/BftU1GxZMKTLkkMWBGF5iUDY7KMlGy3FjKafl2rEXy31yo\nkQ9N4TdLpkXpC5xBp/SplTn0yv2QfEM+M7nDApkleTD+8OwNjeRflKebud1l2Fr7\nJwF+7DsUJXs0zkBY7sq4dmIvQiGaqGmvrACFHc8L7qNZjRGAyaZpmCJlwu+oaMt5\n6laDkj6b0jy/P6At1vxnhv0lU1oyyNBU+xKjnx8XPAAiL8j1D1R/RlogG4t33kPt\nWyOstnOG3tIWLNLiwUjYgZfYzit4K3vXrvolNOln88KzkZAaV6k7Bbrt8BV0ofYl\n8BTuWYPXAgMBAAECggEADSk88DOwpiDLWbyY+28jEs+DeAnPNys81MrxpWmEO1yr\nqmNwqeqVP7Jd63pe4omRaI9VbtKUvbpz9N+1c6tB+wEPsnZFR1Mh1Lak7hmWcood\n7snAYALDMSYibyHiH6tryuFfDqutM8o8bL5P9lD64L+mvTCKIRLokByX+eO2QGJ7\nSmxcP4EHqyXDuOivN5XB0JdNe8E070Kvx3ZIFU60WQC8dHE3HoDnNFbY3+yUqnjl\nVAYHalxztK1sksIa7Gx5uVyWvdbULoHEsOZCVfwi0+2DPl9OxK/b5ZnSfbpCbRl5\ncT57t/RFPN/Aw4T5wRg3Q/y5x8e+ETN27oAOSb7TgQKBgQDRwf8fTVqRFbz0FpLz\nSg+qP/QPPmukAMuI85aCt9vqXUr7crnIxVSiIumLne4Smbrbjrw2mm+qTqQaTSXQ\n3qkmEHNu1sFJgjGeo3nfWq4itsHtqjkaW2dTuTNZQ5EIWQcMw0yiw9hOD0ta5MG2\n87ei6YpWBLy/S4tWnWnRrklB9wKBgQDI0XcHgxqBDdvJsrHViDxPQ9w7otz5yEFl\nlPmym2xoYQ0w1RXVE+xwegoYBeiF3JFV6e1tjI/CFcwXcOQvcSqYBmWFS565pB7E\nN9ydrdJcVc9hcsMfLtRQFPdPspoEMNNv02966WuXFys09Li8PIFWf2N5ycXzXgzA\nc2ECy8dVIQKBgB4BcVxp9V2xzWDhZc4Vtx30nhYcKMvCLVt+9PXoFTZ2eAZ2R+tX\nhx7WfbAyPF8+zIMh7PympPio3ULB7HnvkCTYz5p4cBfy3uRBoGp6D1T57c3wvtBt\naN+KK7VGPBYEnkSOH4VdHLE18OKkvK1OOeO9IsPhU5rN1LXkOMH8+4/LAoGAZ7IJ\nxZ5EJFm0oV0diQaVJdUDtuOtOWnXow2fNkQdYXSj7BBL+sAT+ix6Y9dBL0Yq4fMu\nP8AyR2UcAwqvOXQ1K1U6PO9EYdXGcUnrKJymIDnLISWybbqvtT5uSgAOmZVgyMCk\nMxKvFNDI5cpsTf7sRm73Pd8b0URCT2oEsP3qyyECgYEAiyVXMgNHArNui9yM/p1Q\nK++z7WjBQSF3PjbUXPeSmhi58vaBBWBQ5khSG1w8mVVZ5j6eItY2DX7dEKubps+f\nKEIcGePqFgf6q4vC9nscp45kE1a1nBDaHl91h6HcNSGc4PQX0xH0U/dLwFi54KuU\nS6XueFDg1YzOFLhL/1HM/sQ=\n-----END PRIVATE KEY-----\n",[m
+   "client_email": "firebase-adminsdk-fbsvc@zezwe-crm.iam.gserviceaccount.com",[m
+   "client_id": "107189320998717791057",[m
+
+[33mcommit e235cf9eff5f8d6ee25408b5eab8dff8facca85e[m
+Author: nostalgic-code <tcityhorizon88@gmail.com>
+Date:   Mon May 12 14:29:14 2025 +0200
+
+    Update .gitignore to better protect sensitive files
+
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mindex 811a3e3..390de59 100644[m
+[1m--- a/.gitignore[m
+[1m+++ b/.gitignore[m
+[36m@@ -4,6 +4,8 @@[m [mfirebase-service-account-key.json[m
+ .env.local[m
+ .env.development[m
+ .env.production[m
+[32m+[m[32m.env.*[m
+[32m+[m[32m!.env.example[m
+ [m
+ # Dependencies[m
+ /node_modules[m
+
+[33mcommit 3c35619eb9415ce4fe911fbb2e0cdcf347b067c7[m
+Author: nostalgic-code <tcityhorizon88@gmail.com>
+Date:   Mon May 12 14:26:25 2025 +0200
+
+    Secure Firebase configuration and add environment variables
+
+[1mdiff --git a/.env.example b/.env.example[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ee176bc[m
+[1m--- /dev/null[m
+[1m+++ b/.env.example[m
+[36m@@ -0,0 +1,11 @@[m
+[32m+[m[32m# Firebase Configuration (Frontend)[m
+[32m+[m[32mVITE_FIREBASE_API_KEY=your_api_key[m
+[32m+[m[32mVITE_FIREBASE_AUTH_DOMAIN=your_auth_domain[m
+[32m+[m[32mVITE_FIREBASE_PROJECT_ID=your_project_id[m
+[32m+[m[32mVITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket[m
+[32m+[m[32mVITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id[m
+[32m+[m[32mVITE_FIREBASE_APP_ID=your_app_id[m
+[32m+[m[32mVITE_FIREBASE_MEASUREMENT_ID=your_measurement_id[m
+[32m+[m
+[32m+[m[32m# Firebase Admin (Backend)[m
+[32m+[m[32mGOOGLE_APPLICATION_CREDENTIALS=path/to/firebase-service-account-key.json[m
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mnew file mode 100644[m
+[1mindex 0000000..811a3e3[m
+[1m--- /dev/null[m
+[1m+++ b/.gitignore[m
+[36m@@ -0,0 +1,24 @@[m
+[32m+[m[32m# Firebase[m
+[32m+[m[32mfirebase-service-account-key.json[m
+[32m+[m[32m.env[m
+[32m+[m[32m.env.local[m
+[32m+[m[32m.env.development[m
+[32m+[m[32m.env.production[m
+[32m+[m
+[32m+[m[32m# Dependencies[m
+[32m+[m[32m/node_modules[m
+[32m+[m[32m/env[m
+[32m+[m[32m__pycache__/[m
+[32m+[m[32m*.py[cod][m
+[32m+[m
+[32m+[m[32m# Build files[m
+[32m+[m[32m/dist[m
+[32m+[m[32m/build[m
+[32m+[m[32m.DS_Store[m
+[32m+[m
+[32m+[m[32m# Database[m
+[32m+[m[32mdb.sqlite3[m
+[32m+[m
+[32m+[m[32m# IDE[m
+[32m+[m[32m.vscode/[m
+[32m+[m[32m.idea/[m
+[1mdiff --git a/backend/api/firebase_auth.py b/backend/api/firebase_auth.py[m
+[1mindex 107e005..73d88e1 100644[m
+[1m--- a/backend/api/firebase_auth.py[m
+[1m+++ b/backend/api/firebase_auth.py[m
+[36m@@ -1,12 +1

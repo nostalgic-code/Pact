@@ -1,0 +1,27 @@
+# Firebase
+firebase-service-account-key.json
+firebase.json
+.env
+.env.local
+.env.development
+.env.production
+.env.*
+!.env.example
+
+# Dependencies
+/node_modules
+/env
+__pycache__/
+*.py[cod]
+
+# Build files
+/dist
+/build
+.DS_Store
+
+# Database
+db.sqlite3
+
+# IDE
+.vscode/
+.idea/

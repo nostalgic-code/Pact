@@ -1,0 +1,18 @@
+Suggested section order continuing from what you have:
+Hero Section – (Already done)
+
+How Pact Works – step-by-step (You already planned this)
+
+Problem/Solution – ("Most goals fail because..." → current section ✅)
+
+Features – Show what’s inside Pact (tiny experiments, tracking, reminders, reflections, etc.)
+
+Social Proof – Testimonials or community
+
+Why Pact is Different / Benefits – Dig deeper into what makes Pact unique
+
+Call to Action – Sign up or start your first tiny experiment
+
+
+
+d maybe we can add a graphs using graphql for the yes or no analytics to map it with the notes that way when a user is looking at the analysis data like why they didnt do it on the day 
