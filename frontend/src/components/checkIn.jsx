@@ -31,7 +31,7 @@ export default function TodaysCheckInCard({ pactId, onCheckIn }) {
 
       const idToken = await currentUser.getIdToken()
 
-      const response = await fetch("http://127.0.0.1:8000/api/checkins/", {
+      const response = await fetch("https://3453-102-39-173-168.ngrok-free.app/api/checkins/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
