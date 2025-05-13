@@ -20,7 +20,7 @@ export default function NotesPage() {
         if (!user) return
 
         const token = await user.getIdToken()
-        const response = await fetch("http://127.0.0.1:8000/api/checkins/", {
+        const response = await fetch("https://3453-102-39-173-168.ngrok-free.app/api/checkins/", {
           headers: { Authorization: token }
         })
 
