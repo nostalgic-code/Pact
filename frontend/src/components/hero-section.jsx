@@ -195,90 +195,88 @@ const transitionVariants = {
               </AnimatedGroup>
             </div>
           </section>
-          <section className="bg-background pb-16 pt-16 md:pb-32">
-            <div className="group relative m-auto max-w-5xl px-6">
-              <div className="absolute inset-0 z-10 flex scale-95 items-center justify-center opacity-0 duration-500 group-hover:scale-100 group-hover:opacity-100">
-                <a href="/" className="block text-sm duration-150 hover:opacity-75 text-black">
-                  <span>Technologies</span>
-  
-                  <ChevronRight className="ml-1 inline-block size-3" />
-                </a>
-              </div>
-              <div className="group-hover:blur-xs mx-auto mt-12 grid max-w-2xl grid-cols-4 gap-x-12 gap-y-8 transition-all duration-500 group-hover:opacity-50 sm:gap-x-16 sm:gap-y-14">
-                <div className="flex">
-                  <img
-                    className="mx-auto h-5 w-fit dark:invert"
-                    src="https://html.tailus.io/blocks/customers/nvidia.svg"
-                    alt="Nvidia Logo"
-                    height="20"
-                    width="auto"
-                  />
-                </div>
-  
-                <div className="flex">
-                  <img
-                    className="mx-auto h-4 w-fit dark:invert"
-                    src="https://html.tailus.io/blocks/customers/column.svg"
-                    alt="Column Logo"
-                    height="16"
-                    width="auto"
-                  />
-                </div>
-                <div className="flex">
-                  <img
-                    className="mx-auto h-4 w-fit dark:invert"
-                    src="https://html.tailus.io/blocks/customers/github.svg"
-                    alt="GitHub Logo"
-                    height="16"
-                    width="auto"
-                  />
-                </div>
-                <div className="flex">
-                  <img
-                    className="mx-auto h-5 w-fit dark:invert"
-                    src="https://html.tailus.io/blocks/customers/nike.svg"
-                    alt="Nike Logo"
-                    height="20"
-                    width="auto"
-                  />
-                </div>
-                <div className="flex">
-                  <img
-                    className="mx-auto h-5 w-fit dark:invert"
-                    src="https://html.tailus.io/blocks/customers/lemonsqueezy.svg"
-                    alt="Lemon Squeezy Logo"
-                    height="20"
-                    width="auto"
-                  />
-                </div>
-                <div className="flex">
-                  <img
-                    className="mx-auto h-4 w-fit dark:invert"
-                    src="https://html.tailus.io/blocks/customers/laravel.svg"
-                    alt="Laravel Logo"
-                    height="16"
-                    width="auto"
-                  />
-                </div>
-                <div className="flex">
-                  <img
-                    className="mx-auto h-7 w-fit dark:invert"
-                    src="https://html.tailus.io/blocks/customers/lilly.svg"
-                    alt="Lilly Logo"
-                    height="28"
-                    width="auto"
-                  />
-                </div>
-  
-                <div className="flex">
-                  <img
-                    className="mx-auto h-6 w-fit dark:invert"
-                    src="https://html.tailus.io/blocks/customers/openai.svg"
-                    alt="OpenAI Logo"
-                    height="24"
-                    width="auto"
-                  />
-                </div>
+          <section className="bg-background relative overflow-hidden pb-16 pt-16 md:pb-32">
+            <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+            <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-zinc-500/30 to-transparent"></div>
+            
+            <div className="container relative">
+              <TextEffect preset="fade-in-blur" as="h2" className="mb-12 text-center text-3xl font-semibold tracking-tight">
+                Wisdom from the Masters
+              </TextEffect>              <div className="mx-auto max-w-5xl">
+                <AnimatedGroup
+                  className="grid grid-cols-1 md:grid-cols-2 gap-6"
+                  variants={{
+                    container: {
+                      visible: {
+                        transition: {
+                          staggerChildren: 0.1,
+                          delayChildren: 0.3,
+                        },
+                      },
+                    },
+                    ...transitionVariants,
+                  }}
+                >
+                  <div className="relative overflow-hidden rounded-xl border bg-gradient-to-b from-zinc-50 to-white p-6 shadow-lg transition-shadow hover:shadow-xl dark:from-zinc-900/50 dark:to-zinc-900">
+                    <div className="absolute inset-0 bg-gradient-to-b from-zinc-50/50 to-white/90 opacity-0 transition-opacity group-hover:opacity-100 dark:from-zinc-900/50 dark:to-zinc-900/90"></div>
+                    <div className="relative">
+                      <svg className="absolute -left-4 -top-4 h-8 w-8 text-zinc-300/50 dark:text-zinc-500/50" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                      </svg>
+                      <p className="text-lg text-zinc-700 dark:text-zinc-300">
+                        Don't stop when you're tired. Stop when you're done. It's not about motivation, it's about dedication.
+                      </p>                      <div className="mt-6">
+                        <p className="font-semibold text-zinc-900 dark:text-white">David Goggins</p>
+                        <p className="text-sm text-zinc-500">Navy SEAL, Ultramarathon Runner</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="relative overflow-hidden rounded-xl border bg-gradient-to-b from-zinc-50 to-white p-6 shadow-lg transition-shadow hover:shadow-xl dark:from-zinc-900/50 dark:to-zinc-900">
+                    <div className="absolute inset-0 bg-gradient-to-b from-zinc-50/50 to-white/90 opacity-0 transition-opacity group-hover:opacity-100 dark:from-zinc-900/50 dark:to-zinc-900/90"></div>
+                    <div className="relative">
+                      <svg className="absolute -left-4 -top-4 h-8 w-8 text-zinc-300/50 dark:text-zinc-500/50" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                      </svg>
+                      <p className="text-lg text-zinc-700 dark:text-zinc-300">
+                        Success is doing what you said you would do, consistently, day after day.
+                      </p>                      <div className="mt-6">
+                        <p className="font-semibold text-zinc-900 dark:text-white">Andy Frisella</p>
+                        <p className="text-sm text-zinc-500">Entrepreneur, MFCEO Project</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="relative overflow-hidden rounded-xl border bg-gradient-to-b from-zinc-50 to-white p-6 shadow-lg transition-shadow hover:shadow-xl dark:from-zinc-900/50 dark:to-zinc-900">
+                    <div className="absolute inset-0 bg-gradient-to-b from-zinc-50/50 to-white/90 opacity-0 transition-opacity group-hover:opacity-100 dark:from-zinc-900/50 dark:to-zinc-900/90"></div>
+                    <div className="relative">
+                      <svg className="absolute -left-4 -top-4 h-8 w-8 text-zinc-300/50 dark:text-zinc-500/50" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                      </svg>
+                      <p className="text-lg text-zinc-700 dark:text-zinc-300">
+                        Setting goals is the first step in turning the invisible into the visible. Take massive, determined action.
+                      </p>                      <div className="mt-6">
+                        <p className="font-semibold text-zinc-900 dark:text-white">Tony Robbins</p>
+                        <p className="text-sm text-zinc-500">Author, Life Coach</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="relative overflow-hidden rounded-xl border bg-gradient-to-b from-zinc-50 to-white p-6 shadow-lg transition-shadow hover:shadow-xl dark:from-zinc-900/50 dark:to-zinc-900">
+                    <div className="absolute inset-0 bg-gradient-to-b from-zinc-50/50 to-white/90 opacity-0 transition-opacity group-hover:opacity-100 dark:from-zinc-900/50 dark:to-zinc-900/90"></div>
+                    <div className="relative">
+                      <svg className="absolute -left-4 -top-4 h-8 w-8 text-zinc-300/50 dark:text-zinc-500/50" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                      </svg>
+                      <p className="text-lg text-zinc-700 dark:text-zinc-300">
+                        Life isn't about finding yourself. Life is about creating yourself through small, consistent actions every single day.
+                      </p>                      <div className="mt-6">
+                        <p className="font-semibold text-zinc-900 dark:text-white">Jocko Willink</p>
+                        <p className="text-sm text-zinc-500">Navy SEAL, Author</p>
+                      </div>
+                    </div>
+                  </div>
+                </AnimatedGroup>
               </div>
             </div>
           </section>
@@ -286,5 +284,5 @@ const transitionVariants = {
       </>
     )
   }
-  
-  
+
+
