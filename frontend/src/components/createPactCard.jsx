@@ -38,7 +38,7 @@ export default function CreatePactCard() {
       }
 
       const idToken = await currentUser.getIdToken()
-      const response = await fetch("http://127.0.0.1:8000/api/pacts/", {
+      const response = await fetch("https://3453-102-39-173-168.ngrok-free.app/api/pacts/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
