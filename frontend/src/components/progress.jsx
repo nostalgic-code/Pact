@@ -19,7 +19,7 @@ export default function ProgressCard() {
         }
 
         const token = await user.getIdToken()
-        const res = await fetch("http://127.0.0.1:8000/api/checkins/", {
+        const res = await fetch("https://3453-102-39-173-168.ngrok-free.app/api/checkins/", {
           headers: {
             Authorization: token,
           },
