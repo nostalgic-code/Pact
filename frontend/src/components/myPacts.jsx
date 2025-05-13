@@ -39,7 +39,7 @@ export default function MyPactsPage() {
   const fetchPacts = async (token) => {
     try {
       setIsLoading(true)
-      const res = await fetch("http://127.0.0.1:8000/api/pacts", {
+      const res = await fetch("https://3453-102-39-173-168.ngrok-free.app/api/pacts", {
         headers: { Authorization: token },
       })
       if (!res.ok) throw new Error("Failed to fetch pacts")
@@ -104,7 +104,7 @@ export default function MyPactsPage() {
 
   const handleUpdatePact = async () => {
     try {
-      const response = await fetch(`http://127.0.0.1:8000/api/pacts/${editingPact.id}/`, {
+      const response = await fetch(`https://3453-102-39-173-168.ngrok-free.app/api/pacts/${editingPact.id}/`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -142,7 +142,7 @@ export default function MyPactsPage() {
 
   const handlePauseToggle = async (pact) => {
     try {
-      const response = await fetch(`http://127.0.0.1:8000/api/pacts/${pact.id}/`, {
+      const response = await fetch(`https://3453-102-39-173-168.ngrok-free.app/api/pacts/${pact.id}/`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -156,7 +156,7 @@ export default function MyPactsPage() {
       if (!response.ok) throw new Error("Failed to update pact status")
       
       // Create status history entry
-      const statusResponse = await fetch("http://127.0.0.1:8000/api/status-history/", {
+      const statusResponse = await fetch("https://3453-102-39-173-168.ngrok-free.app/api/status-history/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -554,7 +554,7 @@ function CheckInButton({ pactId, choice, note, onCheckIn }) {
       if (!user) throw new Error("Not logged in")
       const token = await user.getIdToken()
 
-      await fetch("http://127.0.0.1:8000/api/checkins/", {
+      await fetch("https://3453-102-39-173-168.ngrok-free.app/api/checkins/", {
         method: "POST",
         headers: {
           Authorization: token,
