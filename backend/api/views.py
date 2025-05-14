@@ -331,7 +331,10 @@ from django.db.models import Count, Case, When, IntegerField
 from datetime import datetime, timedelta
 from django.utils import timezone
 
-# ...existing imports and code...
+# ...existing code...
+from rest_framework.decorators import api_view
+from django.utils import timezone
+from datetime import timedelta
 
 @api_view(['GET'])
 def get_stats(request):
@@ -376,6 +379,7 @@ def get_stats(request):
     total_days = checkins.count()
     completion_rate = round((total_checkins / total_days * 100) if total_days > 0 else 0)
 
+    # Return the stats as JSON response
     return Response({
         'currentStreak': current_streak,
         'completionRate': completion_rate,
