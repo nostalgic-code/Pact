@@ -22,7 +22,7 @@ export default function CheckInList({ pactId }) {
 
         const idToken = await currentUser.getIdToken()
 
-        const res = await fetch(`https://9de1-102-39-173-168.ngrok-free.app/api/pacts/${pactId}/checkins/`, {
+        const res = await fetch(`https://1756-102-39-173-168.ngrok-free.app/api/pacts/${pactId}/checkins/`, {
           headers: {
             Authorization: idToken, // 👈 Include Firebase token
           },
