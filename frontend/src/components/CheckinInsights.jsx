@@ -122,7 +122,7 @@ export default function InsightsDashboard() {
     const endDate = new Date()
     const startDate = subDays(endDate, parseInt(timeRange))
 
-    const res = await fetch(`https://1756-102-39-173-168.ngrok-free.app/api/checkins/?start_date=${startDate.toISOString().split('T')[0]}&end_date=${endDate.toISOString().split('T')[0]}`, {
+    const res = await fetch(`https://2238-102-39-173-168.ngrok-free.app/api/checkins/?start_date=${startDate.toISOString().split('T')[0]}&end_date=${endDate.toISOString().split('T')[0]}`, {
       headers: { Authorization: token },
     })
     const data = await res.json()
