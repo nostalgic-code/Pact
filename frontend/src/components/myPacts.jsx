@@ -156,7 +156,7 @@ export default function MyPactsPage() {
       if (!response.ok) throw new Error("Failed to update pact status")
       
       // Create status history entry
-      const statusResponse = await fetch("https://1756-102-39-173-168.ngrok-free.app/api/status-history/", {
+      const statusResponse = await fetch("https://2238-102-39-173-168.ngrok-free.app/api/status-history/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
