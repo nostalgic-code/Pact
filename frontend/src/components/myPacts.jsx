@@ -39,7 +39,7 @@ export default function MyPactsPage() {
   const fetchPacts = async (token) => {
     try {
       setIsLoading(true)
-      const res = await fetch("https://1756-102-39-173-168.ngrok-free.app/api/pacts", {
+      const res = await fetch("https://2238-102-39-173-168.ngrok-free.app/api/pacts", {
         headers: { Authorization: token },
       })
       if (!res.ok) throw new Error("Failed to fetch pacts")
@@ -84,7 +84,7 @@ export default function MyPactsPage() {
 
   const handleDelete = async (pactId) => {
     try {
-      const response = await fetch(`https://1756-102-39-173-168.ngrok-free.app/api/pacts/${pactId}/`, {
+      const response = await fetch(`https://2238-102-39-173-168.ngrok-free.app/api/pacts/${pactId}/`, {
         method: "DELETE",
         headers: {
           Authorization: userToken,
@@ -104,7 +104,7 @@ export default function MyPactsPage() {
 
   const handleUpdatePact = async () => {
     try {
-      const response = await fetch(`https://1756-102-39-173-168.ngrok-free.app/api/pacts/${editingPact.id}/`, {
+      const response = await fetch(`https://2238-102-39-173-168.ngrok-free.app/api/pacts/${editingPact.id}/`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -142,7 +142,7 @@ export default function MyPactsPage() {
 
   const handlePauseToggle = async (pact) => {
     try {
-      const response = await fetch(`https://1756-102-39-173-168.ngrok-free.app/api/pacts/${pact.id}/`, {
+      const response = await fetch(`https://2238-102-39-173-168.ngrok-free.app/api/pacts/${pact.id}/`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -554,7 +554,7 @@ function CheckInButton({ pactId, choice, note, onCheckIn }) {
       if (!user) throw new Error("Not logged in")
       const token = await user.getIdToken()
 
-      await fetch("https://1756-102-39-173-168.ngrok-free.app/api/checkins/", {
+      await fetch("https://2238-102-39-173-168.ngrok-free.app/api/checkins/", {
         method: "POST",
         headers: {
           Authorization: token,
