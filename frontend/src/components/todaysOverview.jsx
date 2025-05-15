@@ -91,7 +91,7 @@ export default function TodaysOverview() {
 
       try {
         const token = await user.getIdToken()
-        const res = await fetch("https://1756-102-39-173-168.ngrok-free.app/api/pacts", {
+        const res = await fetch("https://2238-102-39-173-168.ngrok-free.app/api/pacts", {
           headers: { Authorization: token },
         })
 
