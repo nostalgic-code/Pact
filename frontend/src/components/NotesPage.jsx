@@ -20,7 +20,7 @@ export default function NotesPage() {
         if (!user) return
 
         const token = await user.getIdToken()
-        const response = await fetch("https://56ff-102-39-173-168.ngrok-free.app/api/checkins/", {
+        const response = await fetch("https://54e5-102-39-173-168.ngrok-free.app/api/checkins/", {
           headers: { Authorization: token }
         })
 
