@@ -21,7 +21,7 @@ export default function StatsCard() {
 
       try {
         const token = await user.getIdToken()
-        const res = await fetch("https://56ff-102-39-173-168.ngrok-free.app/api/stats", {
+        const res = await fetch("https://54e5-102-39-173-168.ngrok-free.app/api/stats", {
           headers: { Authorization: token },
         })
 
